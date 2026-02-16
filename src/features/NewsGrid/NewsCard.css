@@ -1,0 +1,66 @@
+.news-card.horizontal {
+    background: var(--card-bg);
+    border-radius: 20px;
+    padding: 20px;
+    display: flex;
+    gap: 20px;
+    box-shadow: var(--shadow-soft);
+    transition: 0.3s;
+}
+
+.news-card.horizontal:hover {
+    box-shadow: var(--shadow-hover);
+}
+
+.news-card.horizontal .card-img {
+    width: 120px;
+    height: 120px;
+    border-radius: 12px;
+    object-fit: cover;
+}
+
+.news-card.horizontal .card-content h3 {
+    font-size: 18px;
+    margin-bottom: 8px;
+    line-height: 1.3;
+}
+
+.news-card.horizontal .card-content p {
+    font-size: 14px;
+    color: var(--text-muted);
+}
+
+/* Grid Variant */
+.news-card.grid {
+    background: var(--card-bg);
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: var(--shadow-soft);
+    transition: 0.3s;
+    height: 100%;
+}
+
+.news-card.grid:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-hover);
+}
+
+.news-card.grid .card-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.news-card.grid .card-content {
+    padding: 24px;
+}
+
+.news-card.grid .card-content h4 {
+    font-size: 20px;
+    margin-bottom: 12px;
+}
+
+.news-card.grid .card-content p {
+    font-size: 14px;
+    color: var(--text-muted);
+}

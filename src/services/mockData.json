@@ -1,0 +1,50 @@
+[
+  {
+    "id": "1",
+    "title": "A Reconstrução Urbana no Século XXI: O Fim do Trânsito?",
+    "summary": "Mobilidade aérea e sistemas de IA prometem transformar nossas cidades em jardins horizontais.",
+    "category": "Futurismo",
+    "badge": "Futurismo",
+    "imageUrl": "/assets/featured_tech_news_1771234743775.png",
+    "publishDate": "2026-02-16",
+    "isFeatured": true
+  },
+  {
+    "id": "2",
+    "title": "O Mistério das Estrelas Órfãs: Novas Descobertas no Espaço Profundo",
+    "summary": "Cientistas identificam astros que viajam sozinhos pelo vácuo intergaláctico sem vínculo com galáxias.",
+    "category": "Ciência",
+    "badge": "Ciência",
+    "imageUrl": "/assets/science_news_space_1771234787844.png",
+    "publishDate": "2026-02-16",
+    "isFeatured": true
+  },
+  {
+    "id": "3",
+    "title": "Inovação na Grama: A Tecnologia que Define o Futebol Moderno",
+    "summary": "Chips em chuteiras e análise em tempo real mudam a forma como treinadores planejam táticas.",
+    "category": "Esportes",
+    "badge": "Esportes",
+    "imageUrl": "/assets/sports_news_soccer_1771234758022.png",
+    "publishDate": "2026-02-16",
+    "isFeatured": true
+  },
+  {
+    "id": "4",
+    "title": "GazetaNews Análise: Futuro Econômico",
+    "summary": "O impacto das decisões governamentais na economia sustentável para o próximo triênio.",
+    "category": "Economia",
+    "imageUrl": "/assets/politics_news_building_brazil_1771234773490.png",
+    "publishDate": "2026-02-15",
+    "isFeatured": false
+  },
+  {
+    "id": "5",
+    "title": "Arena Global: Unindo Culturas",
+    "summary": "Como a paixão pelo esporte está unindo culturas em um mundo cada vez mais digital.",
+    "category": "Esportes",
+    "imageUrl": "/assets/sports_news_soccer_1771234758022.png",
+    "publishDate": "2026-02-14",
+    "isFeatured": false
+  }
+]
