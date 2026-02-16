@@ -1,7 +1,9 @@
 export interface NewsDTO {
     id: string;
+    slug: string;
     title: string;
     summary: string;
+    fullContent: string[];
     category: string;
     imageUrl: string;
     publishDate: string;
@@ -10,5 +12,5 @@ export interface NewsDTO {
 }
 
 export interface CarouselNewsDTO extends NewsDTO {
-    badge: string;
+    badge?: string;
 }

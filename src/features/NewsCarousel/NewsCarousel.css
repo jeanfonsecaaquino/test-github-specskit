@@ -72,3 +72,20 @@
     background: white;
     transform: scale(1.5);
 }
+
+.hero-overlay .btn-read-more {
+    display: inline-block;
+    background: white;
+    color: black;
+    padding: 10px 24px;
+    border-radius: 50px;
+    font-weight: 600;
+    text-decoration: none;
+    margin-top: 20px;
+    transition: 0.3s;
+}
+
+.hero-overlay .btn-read-more:hover {
+    transform: scale(1.05);
+    background: #f0f0f0;
+}

@@ -56,7 +56,7 @@ As a portal visitor, I want to easily go back to the home page after reading an 
 - **FR-003**: System MUST identify the article by a unique slug in the URL path (e.g., `/news/:slug`).
 - **FR-004**: Home page components (NewsCarousel, NewsCard) MUST be updated to link to the detail page.
 - **FR-005**: Navigation MUST be handled via client-side routing to ensure instant page transitions.
-- **FR-006**: [NEEDS CLARIFICATION: Should the detail page support Rich Text/Markdown for the body, or just plain text paragraphs?]
+- **FR-006**: System MUST support multi-paragraph content via an array of strings (simple paragraphs). Rich Text/Markdown is NOT required for the initial version.
 
 ### Key Entities
 - **News**: Existing entity.

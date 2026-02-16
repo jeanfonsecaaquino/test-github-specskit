@@ -13,7 +13,7 @@
 
 ## Requirement Completeness
 
-- [ ] No [NEEDS CLARIFICATION] markers remain
+- [x] No [NEEDS CLARIFICATION] markers remain
 - [x] Requirements are testable and unambiguous
 - [x] Success criteria are measurable
 - [x] Success criteria are technology-agnostic (no implementation details)
@@ -31,4 +31,4 @@
 
 ## Notes
 
-- [NEEDS CLARIFICATION] exists in FR-006 regarding rich text support. This is the only remaining item before planning.
+- Decided to use simple paragraphs (array of strings) for the initial version of the body content.

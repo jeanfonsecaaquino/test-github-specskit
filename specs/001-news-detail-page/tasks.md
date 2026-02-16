@@ -17,8 +17,8 @@
 **Purpose**: Project initialization and basic structure
 
 - [x] T001 Create feature branch `001-news-detail-page`
-- [ ] T002 Install dependencies: `npm install react-router-dom`
-- [ ] T003 Configure `BrowserRouter` in `src/main.tsx`
+- [x] T002 Install dependencies: `npm install react-router-dom`
+- [x] T003 Configure `BrowserRouter` in `src/main.tsx`
 
 ---
 
@@ -28,10 +28,10 @@
 
 **⚠️ CRITICAL**: No user story work can begin until this phase is complete
 
-- [ ] T004 [P] Update `NewsDTO` type with `slug: string` and `fullContent: string[]` in `src/types/news.dto.ts`
-- [ ] T005 [P] Update `src/services/mockData.json` with unique `slug` and multi-paragraph `fullContent` for all items
-- [ ] T006 Update `src/services/newsService.ts` to include `getNewsBySlug(slug: string)` method
-- [ ] T007 [P] Create directory structure `src/features/NewsDetail/`
+- [x] T004 [P] Update `NewsDTO` type with `slug: string` and `fullContent: string[]` in `src/types/news.dto.ts`
+- [x] T005 [P] Update `src/services/mockData.json` with unique `slug` and multi-paragraph `fullContent` for all items
+- [x] T006 Update `src/services/newsService.ts` to include `getNewsBySlug(slug: string)` method
+- [x] T007 [P] Create directory structure `src/features/NewsDetail/`
 
 **Checkpoint**: Foundation ready - user story implementation can now begin
 
@@ -45,10 +45,10 @@
 
 ### Implementation for User Story 1
 
-- [ ] T008 [P] [US1] Create `src/features/NewsDetail/NewsPage.styles.css` with responsive layout
-- [ ] T009 [US1] Create `src/features/NewsDetail/NewsPage.tsx` using `useParams` (slug) and `newsService`
-- [ ] T010 [US1] Implement unit tests for `NewsPage` in `src/features/NewsDetail/NewsPage.test.tsx`
-- [ ] T011 [US1] Add `/news/:slug` route to `src/App.tsx`
+- [x] T008 [P] [US1] Create `src/features/NewsDetail/NewsPage.styles.css` with responsive layout
+- [x] T009 [US1] Create `src/features/NewsDetail/NewsPage.tsx` using `useParams` (slug) and `newsService`
+- [x] T010 [US1] Implement unit tests for `NewsPage` in `src/features/NewsDetail/NewsPage.test.tsx`
+- [x] T011 [US1] Add `/news/:slug` route to `src/App.tsx`
 
 **Checkpoint**: User Story 1 is functional and testable via direct URL.
 
@@ -58,12 +58,12 @@
 
 **Goal**: As a portal visitor, I want to click on a news card on the home page and be taken to the full article.
 
-**Independent Test**: Click a "Read More" button on the home page and verify redirection to `/news/:id`.
+**Independent Test**: Click a "Read More" button on the home page and verify redirection to `/news/:slug`.
 
 ### Implementation for User Story 2
 
-- [ ] T012 [P] [US2] Update `src/features/NewsGrid/NewsCard.tsx` to use `<Link>` instead of `<a>` or button click
-- [ ] T013 [P] [US2] Update `src/features/NewsCarousel/NewsCarousel.tsx` to use `<Link>` for navigation
+- [x] T012 [P] [US2] Update `src/features/NewsGrid/NewsCard.tsx` to use `<Link>` instead of `<a>` or button click
+- [x] T013 [P] [US2] Update `src/features/NewsCarousel/NewsCarousel.tsx` to use `<Link>` for navigation
 
 ---
 
@@ -75,7 +75,7 @@
 
 ### Implementation for User Story 3
 
-- [ ] T014 [US3] Update `src/components/Header/Header.tsx` to use `<Link>` to `/` for the logo
+- [x] T014 [US3] Update `src/components/Header/Header.tsx` to use `<Link>` to `/` for the logo
 
 ---
 
@@ -83,9 +83,9 @@
 
 **Purpose**: Improvements and final validation
 
-- [ ] T015 [P] Documentation updates in `README.md` and feature `research.md`
-- [ ] T016 Run `quickstart.md` validation steps
-- [ ] T017 Final `npm run test` and `npm run build` check
+- [x] T015 [P] Documentation updates in `README.md` and feature `research.md`
+- [x] T016 Run `quickstart.md` validation steps
+- [x] T017 Final `npm run test` and `npm run build` check
 
 ---
 
