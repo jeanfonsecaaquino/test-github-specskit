@@ -1,4 +1,5 @@
 import { render, screen, act } from '@testing-library/react';
+import { MemoryRouter } from 'react-router-dom';
 import { describe, it, expect, vi, beforeEach, afterEach } from 'vitest';
 import NewsCarousel from './NewsCarousel';
 import type { NewsDTO } from '../../types/news.dto';
@@ -6,8 +7,10 @@ import type { NewsDTO } from '../../types/news.dto';
 const mockNews: NewsDTO[] = [
     {
         id: '1',
+        slug: 'news-1',
         title: 'News 1',
         summary: 'Summary 1',
+        fullContent: ['Content 1'],
         category: 'Cat 1',
         imageUrl: 'img1.jpg',
         publishDate: '2026',
@@ -15,8 +18,10 @@ const mockNews: NewsDTO[] = [
     },
     {
         id: '2',
+        slug: 'news-2',
         title: 'News 2',
         summary: 'Summary 2',
+        fullContent: ['Content 2'],
         category: 'Cat 2',
         imageUrl: 'img2.jpg',
         publishDate: '2026',
@@ -34,12 +39,20 @@ describe('NewsCarousel Component', () => {
     });
 
     it('renders the first news item initially', () => {
-        render(<NewsCarousel newsItems={mockNews} />);
+        render(
+            <MemoryRouter>
+                <NewsCarousel newsItems={mockNews} />
+            </MemoryRouter>
+        );
         expect(screen.getByText('News 1')).toBeInTheDocument();
     });
 
     it('transitions to the next slide after 3 seconds', () => {
-        render(<NewsCarousel newsItems={mockNews} />);
+        render(
+            <MemoryRouter>
+                <NewsCarousel newsItems={mockNews} />
+            </MemoryRouter>
+        );
 
         act(() => {
             vi.advanceTimersByTime(3000);
@@ -49,7 +62,11 @@ describe('NewsCarousel Component', () => {
     });
 
     it('wraps around to the first slide after the last one', () => {
-        render(<NewsCarousel newsItems={mockNews} />);
+        render(
+            <MemoryRouter>
+                <NewsCarousel newsItems={mockNews} />
+            </MemoryRouter>
+        );
 
         act(() => {
             vi.advanceTimersByTime(6000); // 3s + 3s

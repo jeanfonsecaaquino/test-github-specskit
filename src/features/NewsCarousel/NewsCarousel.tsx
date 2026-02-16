@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from 'react';
-import type { NewsDTO } from '../../types/news.dto';
+import { Link } from 'react-router-dom';
+import type { CarouselNewsDTO } from '../../types/news.dto';
 import './NewsCarousel.css';
 
 interface NewsCarouselProps {
-    newsItems: NewsDTO[];
+    newsItems: CarouselNewsDTO[];
 }
 
 const NewsCarousel: React.FC<NewsCarouselProps> = ({ newsItems }) => {
@@ -29,13 +30,14 @@ const NewsCarousel: React.FC<NewsCarouselProps> = ({ newsItems }) => {
                 className="carousel-track"
                 style={{ transform: `translateX(-${currentIndex * 100}%)` }}
             >
-                {newsItems.map((item) => (
-                    <div key={item.id} className="carousel-slide">
+                {newsItems.map((item, index) => (
+                    <div className={`carousel-slide ${index === currentIndex ? 'active' : ''}`} key={item.id}>
                         <img src={item.imageUrl} alt={item.title} className="hero-img" />
                         <div className="hero-overlay">
                             {item.badge && <span className="badge">{item.badge}</span>}
                             <h1>{item.title}</h1>
                             <p>{item.summary}</p>
+                            <Link to={`/news/${item.slug}`} className="btn-read-more">Leia Mais</Link>
                         </div>
                     </div>
                 ))}

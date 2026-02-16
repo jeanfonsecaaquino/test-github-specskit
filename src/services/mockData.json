@@ -1,8 +1,14 @@
 [
   {
     "id": "1",
+    "slug": "reconstrucao-urbana-seculo-xxi",
     "title": "A Reconstrução Urbana no Século XXI: O Fim do Trânsito?",
     "summary": "Mobilidade aérea e sistemas de IA prometem transformar nossas cidades em jardins horizontais.",
+    "fullContent": [
+      "A mobilidade urbana está prestes a passar por sua maior revolução desde a invenção do automóvel. Com o avanço dos veículos autônomos e sistemas de tráfego geridos por inteligência artificial, o conceito tradicional de congestionamento pode se tornar coisa do passado.",
+      "Planejadores urbanos em todo o mundo estão redesenhando espaços para priorizar pedestres e áreas verdes, transformando antigas rodovias em parques lineares suspensos.",
+      "A integração de drones de passageiros e transporte público sob demanda promete reduzir o tempo de deslocamento em até 80%, permitindo que as cidades respirem novamente."
+    ],
     "category": "Futurismo",
     "badge": "Futurismo",
     "imageUrl": "/assets/featured_tech_news_1771234743775.png",
@@ -11,8 +17,14 @@
   },
   {
     "id": "2",
+    "slug": "misterio-estrelas-orfas",
     "title": "O Mistério das Estrelas Órfãs: Novas Descobertas no Espaço Profundo",
     "summary": "Cientistas identificam astros que viajam sozinhos pelo vácuo intergaláctico sem vínculo com galáxias.",
+    "fullContent": [
+      "No vasto vácuo entre as galáxias, astrônomos detectaram luzes tênues que desafiam as explicações convencionais. São as chamadas 'estrelas órfãs', astros que não pertencem a nenhuma galáxia específica.",
+      "Novas observações indicam que essas estrelas podem ter sido ejetadas de seus aglomerados originais durante colisões galácticas violentas ocorridas há bilhões de anos.",
+      "O estudo dessas estrelas solitárias oferece pistas cruciais sobre a distribuição de matéria escura no universo e a história da evolução cósmica."
+    ],
     "category": "Ciência",
     "badge": "Ciência",
     "imageUrl": "/assets/science_news_space_1771234787844.png",
@@ -21,8 +33,14 @@
   },
   {
     "id": "3",
+    "slug": "inovacao-na-grama-tecnologia-futebol",
     "title": "Inovação na Grama: A Tecnologia que Define o Futebol Moderno",
     "summary": "Chips em chuteiras e análise em tempo real mudam a forma como treinadores planejam táticas.",
+    "fullContent": [
+      "O futebol contemporâneo é tanto um esporte de força física quanto de processamento de dados. Sensores biométricos embutidos nos uniformes agora fornecem métricas em tempo real sobre o cansaço e a performance de cada jogador.",
+      "Treinadores utilizam realidade aumentada para simular cenários táticos à beira do gramado, permitindo ajustes precisos durante o intervalo que podem decidir o resultado de um campeonato.",
+      "A tecnologia não apenas melhora o desempenho dos atletas, mas também oferece aos torcedores uma camada de análise profunda nunca antes vista na história do esporte."
+    ],
     "category": "Esportes",
     "badge": "Esportes",
     "imageUrl": "/assets/sports_news_soccer_1771234758022.png",
@@ -31,8 +49,14 @@
   },
   {
     "id": "4",
+    "slug": "analise-futuro-economico",
     "title": "GazetaNews Análise: Futuro Econômico",
     "summary": "O impacto das decisões governamentais na economia sustentável para o próximo triênio.",
+    "fullContent": [
+      "O cenário econômico global está em transição para um modelo mais verde e resiliente. Decisões tomadas hoje sobre subsídios para energias renováveis ditarão o ritmo de crescimento das próximas décadas.",
+      "Analistas preveem que a economia circular se tornará o principal motor de inovação, forçando empresas a repensarem toda a sua cadeia de suprimentos para eliminar o desperdício.",
+      "A sustentabilidade deixou de ser uma opção de marketing para se tornar o critério fundamental de investimento no mercado financeiro internacional."
+    ],
     "category": "Economia",
     "imageUrl": "/assets/politics_news_building_brazil_1771234773490.png",
     "publishDate": "2026-02-15",
@@ -40,8 +64,14 @@
   },
   {
     "id": "5",
+    "slug": "arena-global-unindo-culturas",
     "title": "Arena Global: Unindo Culturas",
     "summary": "Como a paixão pelo esporte está unindo culturas em um mundo cada vez mais digital.",
+    "fullContent": [
+      "Eventos esportivos globais continuam sendo um dos poucos momentos em que o mundo para para celebrar conquistas humanas singulares. Mas a forma como consumimos esses eventos mudou drasticamente.",
+      "Plataformas digitais permitem que torcedores de diferentes continentes interajam em tempo real, criando comunidades globais que transcendem barreiras linguísticas e geográficas.",
+      "O esporte se consolidou como uma ferramenta de diplomacia cultural, aproximando povos através da competição saudável e do respeito mútuo no ambiente digital."
+    ],
     "category": "Esportes",
     "imageUrl": "/assets/sports_news_soccer_1771234758022.png",
     "publishDate": "2026-02-14",

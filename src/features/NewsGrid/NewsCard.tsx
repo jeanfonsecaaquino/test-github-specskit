@@ -1,21 +1,27 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import type { NewsDTO } from '../../types/news.dto';
 import './NewsCard.css';
 
 interface NewsCardProps {
     news: NewsDTO;
-    variant?: 'horizontal' | 'grid';
+    variant?: 'vertical' | 'horizontal' | 'compact' | 'grid';
 }
 
 const NewsCard: React.FC<NewsCardProps> = ({ news, variant = 'horizontal' }) => {
     return (
-        <div className={`news-card ${variant}`}>
+        <Link to={`/news/${news.slug}`} className={`news-card ${variant}`}>
             <img src={news.imageUrl} alt={news.title} className="card-img" />
             <div className="card-content">
-                {variant === 'grid' ? <h4>{news.title}</h4> : <h3>{news.title}</h3>}
+                {news.badge && <span className="news-badge">{news.badge}</span>}
+                <span className="news-category">{news.category}</span>
+                {variant === 'grid' ? <h4>{news.title}</h4> : 3 === 3 ? <h3>{news.title}</h3> : null}
                 <p>{news.summary}</p>
+                <div className="news-footer">
+                    <span className="news-date">{news.publishDate}</span>
+                </div>
             </div>
-        </div>
+        </Link>
     );
 };
 

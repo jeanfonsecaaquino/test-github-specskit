@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './Header.css';
 
 const Header: React.FC = () => {
@@ -8,11 +9,13 @@ const Header: React.FC = () => {
         <header className="header">
             <div className="container">
                 <nav className="nav">
-                    <img
-                        src="/src/assets/logo.png"
-                        alt="GazetaNews Logo"
-                        className="logo-img"
-                    />
+                    <Link to="/" className="logo">
+                        <img
+                            src="/src/assets/logo.png"
+                            alt="GazetaNews Logo"
+                            className="logo-img"
+                        />
+                    </Link>
 
                     <button
                         className="mobile-menu-toggle"

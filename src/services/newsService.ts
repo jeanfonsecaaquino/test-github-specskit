@@ -19,3 +19,8 @@ export const getLatestNews = async (): Promise<NewsDTO[]> => {
     const allNews = await getNews();
     return allNews.filter(news => !news.isFeatured);
 };
+
+export const getNewsBySlug = async (slug: string): Promise<NewsDTO | undefined> => {
+    const allNews = await getNews();
+    return allNews.find(news => news.slug === slug);
+};

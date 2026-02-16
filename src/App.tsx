@@ -1,8 +1,10 @@
 import React, { useEffect, useState } from 'react';
+import { Routes, Route } from 'react-router-dom';
 import Header from './components/Header/Header';
 import NewsCarousel from './features/NewsCarousel/NewsCarousel';
 import NewsGrid from './features/NewsGrid/NewsGrid';
 import NewsCard from './features/NewsGrid/NewsCard';
+import NewsPage from './features/NewsDetail/NewsPage';
 import { getFeaturedNews, getLatestNews } from './services/newsService';
 import type { NewsDTO } from './types/news.dto';
 import './index.css';
@@ -40,17 +42,34 @@ const App: React.FC = () => {
       <Header />
 
       <main className="container">
-        <section className="hero-section">
-          <NewsCarousel newsItems={featuredNews} />
+        <Routes>
+          <Route path="/" element={
+            <section className="hero-section">
+              <NewsCarousel newsItems={featuredNews} />
 
-          <div className="secondary-grid">
-            {latestNews.slice(0, 2).map((news) => (
-              <NewsCard key={news.id} news={news} variant="horizontal" />
-            ))}
-          </div>
-        </section>
+              <div className="secondary-grid">
+                {latestNews.slice(0, 2).map((news) => (
+                  <NewsCard key={news.id} news={news} variant="horizontal" />
+                ))}
+              </div>
+            </section>
+          } />
 
-        <NewsGrid newsItems={latestNews} title="GazetaNews Destaques" />
+          <Route path="/news/:slug" element={<NewsPage />} />
+
+          <Route path="*" element={
+            <div style={{ textAlign: 'center', padding: '4rem' }}>
+              <h2>Página não encontrada</h2>
+              <a href="/">Voltar para a Home</a>
+            </div>
+          } />
+        </Routes>
+
+        <Routes>
+          <Route path="/" element={
+            <NewsGrid newsItems={latestNews} title="GazetaNews Destaques" />
+          } />
+        </Routes>
       </main>
 
       <footer>
