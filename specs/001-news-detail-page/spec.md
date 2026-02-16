@@ -12,10 +12,10 @@ As a portal visitor, I want to read the full text of a news article so that I am
 
 **Why this priority**: This is the core purpose of a news portal—delivering the full story once the user is interested.
 
-**Independent Test**: User navigates to a news URL directly (e.g., `/news/1`) and sees the full content specifically for that article.
+**Independent Test**: User navigates to a news URL directly (e.g., `/news/reconstrucao-urbana-seculo-xxi`) and sees the full content specifically for that article.
 
 **Acceptance Scenarios**:
-1. **Given** a news article with ID "1" exists in the system, **When** I navigate to its detail page, **Then** I should see the title, image, and full body text of article "1".
+1. **Given** a news article with slug "reconstrucao-urbana-seculo-xxi" exists in the system, **When** I navigate to its detail page, **Then** I should see the title, image, and full body text of the article.
 2. **Given** I am on a news detail page, **Then** the header and footer must be visible and functional.
 
 ---
@@ -45,7 +45,7 @@ As a portal visitor, I want to easily go back to the home page after reading an 
 ---
 
 ### Edge Cases
-- What happens when a user navigates to a news ID that does not exist? (Assumption: Show a 404/Not Found message).
+- What happens when a user navigates to a news slug that does not exist? (Assumption: Show a 404/Not Found message).
 - How does the system handle an article with no image? (Assumption: Show a placeholder or hide the image area).
 
 ## Requirements *(mandatory)*
@@ -53,7 +53,7 @@ As a portal visitor, I want to easily go back to the home page after reading an 
 ### Functional Requirements
 - **FR-001**: System MUST show a dedicated detail page for each news item.
 - **FR-002**: Detail page MUST display: Title, Main Image, Category, Date, and Full Body Text (paragraphs).
-- **FR-003**: System MUST identify the article by a unique ID in the URL path (e.g., `/news/:id`).
+- **FR-003**: System MUST identify the article by a unique slug in the URL path (e.g., `/news/:slug`).
 - **FR-004**: Home page components (NewsCarousel, NewsCard) MUST be updated to link to the detail page.
 - **FR-005**: Navigation MUST be handled via client-side routing to ensure instant page transitions.
 - **FR-006**: [NEEDS CLARIFICATION: Should the detail page support Rich Text/Markdown for the body, or just plain text paragraphs?]
@@ -61,6 +61,7 @@ As a portal visitor, I want to easily go back to the home page after reading an 
 ### Key Entities
 - **News**: Existing entity.
     - `id`: Unique identifier (string).
+    - `slug`: URL-friendly identifier (e.g., "hoje-na-gazeta-news").
     - `title`: Short descriptive headline.
     - `summary`: Short excerpt for the home page.
     - `fullContent`: Multi-paragraph text for the detail page.
