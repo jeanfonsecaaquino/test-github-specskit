@@ -8,11 +8,14 @@ import NewsPage from './features/NewsDetail/NewsPage';
 import MostReadSection from './features/MostRead/MostReadSection';
 import SearchBar from './features/Search/SearchBar';
 import SearchResultsPage from './features/Search/SearchResultsPage';
+import BadgeResultsPage from './features/BadgeFilter/BadgeResultsPage';
+import { useLocation } from 'react-router-dom';
 import { getFeaturedNews, getLatestNews } from './services/newsService';
 import type { NewsDTO } from './types/news.dto';
 import './index.css';
 
 const App: React.FC = () => {
+  const location = useLocation();
   const [featuredNews, setFeaturedNews] = useState<NewsDTO[]>([]);
   const [latestNews, setLatestNews] = useState<NewsDTO[]>([]);
   const [loading, setLoading] = useState(true);
@@ -43,7 +46,7 @@ const App: React.FC = () => {
   return (
     <div className="app">
       <Header />
-      <SearchBar />
+      {!location.pathname.startsWith('/category/') && <SearchBar />}
 
       <main className="container">
         <Routes>
@@ -61,6 +64,7 @@ const App: React.FC = () => {
 
           <Route path="/news/:slug" element={<NewsPage />} />
           <Route path="/search" element={<SearchResultsPage />} />
+          <Route path="/category/:badge" element={<BadgeResultsPage />} />
 
           <Route path="*" element={
             <div style={{ textAlign: 'center', padding: '4rem' }}>

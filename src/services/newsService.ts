@@ -41,3 +41,13 @@ export const searchNews = async (query: string): Promise<NewsDTO[]> => {
         news.title.toLowerCase().includes(searchTerm)
     );
 };
+
+export const getNewsByBadge = async (badge: string): Promise<NewsDTO[]> => {
+    const allNews = await getNews();
+    const targetBadge = badge.toLowerCase().trim();
+    if (!targetBadge) return [];
+
+    return allNews.filter(news =>
+        news.badge?.toLowerCase() === targetBadge
+    );
+};
