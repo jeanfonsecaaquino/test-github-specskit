@@ -15,7 +15,8 @@ const mockNews = {
     category: 'Test Category',
     imageUrl: 'test-image.jpg',
     publishDate: '2026-02-16',
-    fullContent: ['Paragraph 1', 'Paragraph 2']
+    fullContent: ['Paragraph 1', 'Paragraph 2'],
+    readCount: 150
 };
 
 describe('NewsPage', () => {

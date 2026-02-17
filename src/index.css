@@ -8,6 +8,7 @@
   --header-bg: #000000;
   --shadow-soft: 0 4px 12px rgba(0, 0, 0, 0.05);
   --shadow-hover: 0 8px 24px rgba(0, 0, 0, 0.12);
+  --border-color: #EEEEEE;
 }
 
 * {
@@ -47,8 +48,19 @@ a {
   margin-bottom: 60px;
 }
 
+.home-content-grid {
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  gap: 40px;
+  align-items: start;
+}
+
 @media (max-width: 900px) {
   .hero-section {
+    grid-template-columns: 1fr;
+  }
+
+  .home-content-grid {
     grid-template-columns: 1fr;
   }
 }
