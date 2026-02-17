@@ -26,10 +26,11 @@ const Header: React.FC = () => {
                     </button>
 
                     <ul className={`nav-links ${isMenuOpen ? 'mobile-open' : ''}`}>
-                        <li><a href="#" onClick={() => setIsMenuOpen(false)}>Principais</a></li>
-                        <li><a href="#" onClick={() => setIsMenuOpen(false)}>Economia</a></li>
-                        <li><a href="#" onClick={() => setIsMenuOpen(false)}>Tecnologia</a></li>
-                        <li><a href="#" onClick={() => setIsMenuOpen(false)}>Internacional</a></li>
+                        <li><Link to="/" onClick={() => setIsMenuOpen(false)}>Principais</Link></li>
+                        <li><Link to="/category/economia" onClick={() => setIsMenuOpen(false)}>Economia</Link></li>
+                        <li><Link to="/category/tecnologia" onClick={() => setIsMenuOpen(false)}>Tecnologia</Link></li>
+                        <li><Link to="/category/esportes" onClick={() => setIsMenuOpen(false)}>Esportes</Link></li>
+                        <li><Link to="/category/internacional" onClick={() => setIsMenuOpen(false)}>Internacional</Link></li>
                     </ul>
                     <div className="user-action">Minha Conta</div>
                 </nav>

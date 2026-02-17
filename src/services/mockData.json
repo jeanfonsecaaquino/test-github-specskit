@@ -11,7 +11,7 @@
     ],
     "readCount": 850,
     "category": "Futurismo",
-    "badge": "Futurismo",
+    "badge": "futurismo",
     "imageUrl": "/assets/featured_tech_news_1771234743775.png",
     "publishDate": "2026-02-16",
     "isFeatured": true
@@ -28,7 +28,7 @@
     ],
     "readCount": 1200,
     "category": "Ciência",
-    "badge": "Ciência",
+    "badge": "ciencia",
     "imageUrl": "/assets/science_news_space_1771234787844.png",
     "publishDate": "2026-02-16",
     "isFeatured": true
@@ -45,7 +45,7 @@
     ],
     "readCount": 450,
     "category": "Esportes",
-    "badge": "Esportes",
+    "badge": "esportes",
     "imageUrl": "/assets/sports_news_soccer_1771234758022.png",
     "publishDate": "2026-02-16",
     "isFeatured": true
@@ -62,6 +62,7 @@
     ],
     "readCount": 980,
     "category": "Economia",
+    "badge": "economia",
     "imageUrl": "/assets/politics_news_building_brazil_1771234773490.png",
     "publishDate": "2026-02-15",
     "isFeatured": false
@@ -72,12 +73,13 @@
     "title": "Arena Global: Unindo Culturas",
     "summary": "Como a paixão pelo esporte está unindo culturas em um mundo cada vez mais digital.",
     "fullContent": [
-      "Eventos esportivos globais continuam sendo um dos poucos momentos em que o mundo para para celebrar conquistas humanas singulares. Mas a forma como consumimos esses eventos mudou drasticamente.",
+      "Eventos esportivos globais continuam sendo um dos poucos momentos em que o mundo para para celebrar conquistas humanas singulares. But a forma como consumimos esses eventos mudou drasticamente.",
       "Plataformas digitais permitem que torcedores de diferentes continentes interajam em tempo real, criando comunidades globais que transcendem barreiras linguísticas e geográficas.",
       "O esporte se consolidou como uma ferramenta de diplomacia cultural, aproximando povos através da competição saudável e do respeito mútuo no ambiente digital."
     ],
     "readCount": 320,
     "category": "Esportes",
+    "badge": "esportes",
     "imageUrl": "/assets/sports_news_soccer_1771234758022.png",
     "publishDate": "2026-02-14",
     "isFeatured": false

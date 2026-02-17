@@ -13,8 +13,11 @@ const NewsCard: React.FC<NewsCardProps> = ({ news, variant = 'horizontal' }) => 
         <Link to={`/news/${news.slug}`} className={`news-card ${variant}`}>
             <img src={news.imageUrl} alt={news.title} className="card-img" />
             <div className="card-content">
-                {news.badge && <span className="news-badge">{news.badge}</span>}
-                <span className="news-category">{news.category}</span>
+                {news.badge ? (
+                    <span className="news-badge">{news.badge}</span>
+                ) : (
+                    <span className="news-category">{news.category}</span>
+                )}
                 {variant === 'grid' ? <h4>{news.title}</h4> : 3 === 3 ? <h3>{news.title}</h3> : null}
                 <p>{news.summary}</p>
                 <div className="news-footer">

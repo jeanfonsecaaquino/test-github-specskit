@@ -9,6 +9,7 @@ Currently, two official plugins are available:
 - **News Detail Page**: Veja o conteúdo completo das notícias em tempo real.
 - **Sessão de Mais Lidas**: Sidebar com as 5 notícias mais populares do portal.
 - **Busca de Notícias**: Encontre artigos rapidamente através da barra de busca global.
+- **Filtro por Categoria (Badge)**: Navegue por notícias filtradas por etiquetas diretamente do Header.
 
 ## React Compiler
 
