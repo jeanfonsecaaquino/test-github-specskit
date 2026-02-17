@@ -11,7 +11,7 @@ describe('Header Component', () => {
                 <Header />
             </MemoryRouter>
         );
-        expect(screen.getByRole('heading', { name: /GazetaNews/i })).toBeInTheDocument();
+        expect(screen.getByAltText(/GazetaNews Logo/i)).toBeInTheDocument();
     });
 
     it('renders navigation links', () => {

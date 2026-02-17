@@ -15,6 +15,7 @@ const mockNews: NewsDTO[] = [
         imageUrl: 'img1.jpg',
         publishDate: '2026',
         isFeatured: true,
+        readCount: 100,
     },
     {
         id: '2',
@@ -26,6 +27,7 @@ const mockNews: NewsDTO[] = [
         imageUrl: 'img2.jpg',
         publishDate: '2026',
         isFeatured: true,
+        readCount: 50,
     },
 ];
 

@@ -24,3 +24,20 @@ export const getNewsBySlug = async (slug: string): Promise<NewsDTO | undefined> 
     const allNews = await getNews();
     return allNews.find(news => news.slug === slug);
 };
+
+export const getTopReadNews = async (): Promise<NewsDTO[]> => {
+    const allNews = await getNews();
+    return [...allNews]
+        .sort((a, b) => b.readCount - a.readCount)
+        .slice(0, 5);
+};
+
+export const searchNews = async (query: string): Promise<NewsDTO[]> => {
+    const allNews = await getNews();
+    const searchTerm = query.toLowerCase().trim();
+    if (!searchTerm) return [];
+
+    return allNews.filter(news =>
+        news.title.toLowerCase().includes(searchTerm)
+    );
+};

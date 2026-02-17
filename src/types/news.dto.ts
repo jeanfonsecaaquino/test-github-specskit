@@ -4,6 +4,7 @@ export interface NewsDTO {
     title: string;
     summary: string;
     fullContent: string[];
+    readCount: number;
     category: string;
     imageUrl: string;
     publishDate: string;

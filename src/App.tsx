@@ -5,6 +5,9 @@ import NewsCarousel from './features/NewsCarousel/NewsCarousel';
 import NewsGrid from './features/NewsGrid/NewsGrid';
 import NewsCard from './features/NewsGrid/NewsCard';
 import NewsPage from './features/NewsDetail/NewsPage';
+import MostReadSection from './features/MostRead/MostReadSection';
+import SearchBar from './features/Search/SearchBar';
+import SearchResultsPage from './features/Search/SearchResultsPage';
 import { getFeaturedNews, getLatestNews } from './services/newsService';
 import type { NewsDTO } from './types/news.dto';
 import './index.css';
@@ -40,6 +43,7 @@ const App: React.FC = () => {
   return (
     <div className="app">
       <Header />
+      <SearchBar />
 
       <main className="container">
         <Routes>
@@ -56,6 +60,7 @@ const App: React.FC = () => {
           } />
 
           <Route path="/news/:slug" element={<NewsPage />} />
+          <Route path="/search" element={<SearchResultsPage />} />
 
           <Route path="*" element={
             <div style={{ textAlign: 'center', padding: '4rem' }}>
@@ -67,7 +72,10 @@ const App: React.FC = () => {
 
         <Routes>
           <Route path="/" element={
-            <NewsGrid newsItems={latestNews} title="GazetaNews Destaques" />
+            <div className="home-content-grid">
+              <NewsGrid newsItems={latestNews} title="GazetaNews Destaques" />
+              <MostReadSection />
+            </div>
           } />
         </Routes>
       </main>
